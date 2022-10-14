@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <noscript>Sorry, you have turned JavaScript off or your browser doesn't support JavaScript</noscript>
+        <title>lcm-web</title>
+    </head>
+    <body>
+    <header>
+        <p class="lang"><a href="english.html">English</a></p>
+    </header>
+        <h1>kgV</h1>
+        <section class="main">
+            <label for="firstnumber">A</label>
+            <input type="number" id="firstnumber" placeholder="10">
+            <br>
+            <label for="secondnumber">B</label>
+            <input type="number" id="secondnumber" placeholder="15">
+            <br>
+            <button onclick="onclickLcm()">Calc</button>
+            <p id="solution">kgV(A, B)</p>
+        </section>
+    </body>
+    <script>
+        //Lcm algorithm
+        function Gcd(a, b){
+            while(b != 0){
+                let h = a % b;
+                a = b;
+                b = h;
+            }
+            return a;
+        }
+
+        function Lcm(a, b){
+            if(a == 0 || b == 0){
+                return "Bitte geben sie zwei Werte ein";
+            }
+            return (a*b) / Gcd(a,b);
+        }
+        //------------------------------
+        function onclickLcm(){
+            //get values
+            let A = document.getElementById("firstnumber").value
+            let B = document.getElementById("secondnumber").value
+            //parse values to algorithm 
+            let solution = Lcm(A, B);
+            //display solution
+            document.getElementById("solution").innerHTML = "kgV("+A+", "+B+") = "+solution;
+        }
+    </script>
+</html>
