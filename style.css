@@ -68,12 +68,13 @@ button:active{
     }
 
     button{
-        padding: 80px;
+        padding: 30px;
         font-size:inherit;
         margin-top: 20px;
     }
     #firstnumber, #secondnumber{
         font-size:1rem;
+        width:426.667px;
     }
     
     #firstnumber{
@@ -81,8 +82,5 @@ button:active{
     }
     .main>p{
         font-size: 1.5rem;
-    }
-    a{
-        font-size:35px;
     }
 }
