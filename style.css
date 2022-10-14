@@ -1,6 +1,7 @@
 html{
     background-color: #282b28;
     color:white;
+    text-align: center;
 }
 
 a{
@@ -44,7 +45,6 @@ h1{
 button{
     position: relative; 
     top: 10px;
-    left: 85px;
     padding:5px;
     background-color:#e63946;
     border-color:#e63946;
@@ -64,18 +64,25 @@ button:active{
 
 @media screen and (max-width: 1000px){
     html{
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     button{
-        padding: 20px;
-        left: 80px;
+        padding: 80px;
+        font-size:inherit;
+        margin-top: 20px;
     }
     #firstnumber, #secondnumber{
-        padding: 10px;
+        font-size:1rem;
     }
     
     #firstnumber{
         margin-left:-1px;
+    }
+    .main>p{
+        font-size: 1.5rem;
+    }
+    a{
+        font-size:35px;
     }
 }
