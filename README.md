@@ -5,5 +5,5 @@ A Web interface for the LCM algorithm
 For school 
 
 # Where?
-https://falk-witte.github.io/lcm-web/
+https://falkwitte.github.io/lcm-web/
 
